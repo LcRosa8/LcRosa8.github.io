@@ -81,14 +81,14 @@
     "href": "index.html",
     "title": "Lucas Rosa",
     "section": "",
-    "text": "Finley Malloc majors in Data Analytics at SUNY Geneseo. When not working on data analytics, Finley enjoys spending time unicycling and playing with her pet iguana."
+    "text": "Lucas Rosa is majoring in accounting at SUNY Geneseo. When not working on accounting, Lucas enjoys spending time playing basketball and going to the gym"
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
     "title": "Lucas Rosa",
     "section": "Education",
-    "text": "Education\nState University of New York at Geneseo | Geneseo, NY  B.S. in Data Analytics | Aug 2022 - May 2026  Minor in Business Administration"
+    "text": "Education\nState University of New York at Geneseo | Geneseo, NY  B.S. in Accounting | Aug 2022 - May 2026  Minor in Business Administration"
   },
   {
     "objectID": "index.html#experience",
@@ -107,9 +107,9 @@
   {
     "objectID": "project.html",
     "href": "project.html",
-    "title": "DANL Project",
+    "title": "DANL 200: Introduction to Data AnalyticsProject",
     "section": "",
-    "text": "About this project 👏\n\n1 + 1\n\n[1] 2"
+    "text": "olympic &lt;- read_csv('/Users/lucasrosa/Downloads/olympic_games.csv')\nnvars &lt;- format(round(ncol(olympic), 0), \n                nsmall=0, \n                big.mark=\",\") \nnobs &lt;- format(round(nrow(olympic), 0), \n                nsmall=0, \n                big.mark=\",\")\nThe number of variables is 11; the number of observations is 1,781."
   },
   {
     "objectID": "project.html#summary-statistics",
@@ -124,5 +124,33 @@
     "title": "DANL Project",
     "section": "2.2 MPG and a Type of Cars",
     "text": "2.2 MPG and a Type of Cars\nThe following boxplot shows how the distribution of highway MPG (hwy) varies by a type of cars (class) 🚙 🚚 🚐.\n\nggplot(data = mpg) +\n  geom_boxplot(aes(x = class, y = hwy, fill = class),\n               show.legend = F) +\n  labs(x = \"Class\", y = \"Highway\\nMPG\")"
+  },
+  {
+    "objectID": "project.html#data-visualization",
+    "href": "project.html#data-visualization",
+    "title": "DANL 200: Introduction to Data AnalyticsProject",
+    "section": "2.1 Data Visualization",
+    "text": "2.1 Data Visualization\n\ntop10 &lt;- olympic %&gt;% \n  arrange(desc(gold)) %&gt;%\n  head(10)\n\nprint(top10)\n\n# A tibble: 10 × 11\n    year games_type host_country   host_city athletes teams competitions country\n   &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;          &lt;chr&gt;        &lt;dbl&gt; &lt;dbl&gt;        &lt;dbl&gt; &lt;chr&gt;  \n 1  1984 Summer     United States  Los Ange…     6829   140          221 United…\n 2  1980 Summer     USSR           Moscow        5179    80          203 USSR   \n 3  1904 Summer     United States  St. Louis      651    12           95 United…\n 4  1908 Summer     Great Britain  London        2008    22          110 United…\n 5  1988 Summer     Republic of K… Seoul         8397   159          237 USSR   \n 6  1972 Summer     Federal Repub… Munich        7134   121          195 USSR   \n 7  1976 Summer     Canada         Montreal      6084    92          198 USSR   \n 8  2012 Summer     Great Britain  London       10568   204          302 United…\n 9  2008 Summer     China          Beijing      10942   204          302 People…\n10  1980 Summer     USSR           Moscow        5179    80          203 German…\n# ℹ 3 more variables: gold &lt;dbl&gt;, silver &lt;dbl&gt;, bronze &lt;dbl&gt;"
+  },
+  {
+    "objectID": "project.html#analysis",
+    "href": "project.html#analysis",
+    "title": "DANL 200: Introduction to Data AnalyticsProject",
+    "section": "2.2 Analysis",
+    "text": "2.2 Analysis\nFrom my data we can see that the USSR has won the most amount of metals out of the top 10 countries that won the largest number of gold metals over 10 separate years. From this I can conclude that the USSR is most likely to win the most gold metals in future years. ## Quotes\n\n“Gold medal always feels great. In fact, any appreciation or acknowledgement is a great morale booster”\nDutee Chand"
+  },
+  {
+    "objectID": "project.html#inserting-figures",
+    "href": "project.html#inserting-figures",
+    "title": "DANL 200: Introduction to Data AnalyticsProject",
+    "section": "2.3 Inserting Figures",
+    "text": "2.3 Inserting Figures\n\nggplot(top10, aes(x = reorder(country, gold), y = gold)) +\n  geom_bar(stat = \"identity\", fill = \"gold\") +\n  labs(title = \"Countries with the Most Gold Medals in Olympics\",\n       x = \"Country\",\n       y = \"Total Gold Medals\") +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))"
+  },
+  {
+    "objectID": "project.html#inserting-a-html-page",
+    "href": "project.html#inserting-a-html-page",
+    "title": "DANL 200: Introduction to Data AnalyticsProject",
+    "section": "2.4 Inserting a HTML page",
+    "text": "2.4 Inserting a HTML page"
   }
 ]
