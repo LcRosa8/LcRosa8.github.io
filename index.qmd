@@ -9,13 +9,13 @@ about:
   links:
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://www.linkedin.com/in/lucas-rosa-906358290/
     - icon: instagram
       text: Instagram
       href: https://instagram.com
     - icon: github
       text: GitHub
-      href: https://github.com
+      href: https://lcrosa8.github.io/project.html
     - icon: file-earmark-pdf
       text: Resumé
       href: https://GITHUB_USERNAME.github.io/resume-example.pdf
@@ -28,8 +28,8 @@ Lucas Rosa is majoring in accounting at SUNY Geneseo. When not working on accoun
 
 ## Education
 
-State University of New York at Geneseo \| Geneseo, NY <br> B.S. in Accounting \| Aug 2022 - May 2026 <br> Minor in Business Administration
+State University of New York at Geneseo \| Geneseo, NY <br> B.S. in Accounting \| Aug 2022 - May 2026 <br> 
 
 ## Experience
 
-Starbucks Analytics \| Data Analyst Intern \| May 2024 - Aug 2024
+Lumberyard Worker \| Weis cashier \| May 2024 - Aug 2024
